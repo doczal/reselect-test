@@ -66,10 +66,10 @@ const sortItems = (items, sortType) => {
 const mapStateToProps = state => ({
   items: state.items,
   sortType: state.sortType,
-  sortedItems: getSortedItemsSelector(state),
-  // sortedItems: getSortedItems(state.items, state.sortType),
+  // sortedItems: getSortedItemsSelector(state),
+  sortedItems: getSortedItems(state.items, state.sortType),
   // localSortedItems: sortItems(state.items, state.sortType),
-  bool: state.bool,
+  // bool: state.bool,
 });
 
 const mapDispatchToProps = {

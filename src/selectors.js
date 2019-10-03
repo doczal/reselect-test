@@ -5,7 +5,7 @@ const getItems = state => state.items;
 const getSortType = state => state.sortType;
 
 const getSortedItems = (items, sortType) => {
-  // console.log('sort!');
+  console.log('calling getSortedItems!');
   if (sortType === 'A - Z') {
     return sortBy(items);
   } else if (sortType === 'Z - A') {
